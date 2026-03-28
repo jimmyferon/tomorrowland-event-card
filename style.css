@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Original: Circular Std — replaced with DM Sans (Google Fonts) */
+body {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background: #e6f4f7;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0px;
+    width: inherit;
+}
+
+.header h1 {
+    color: #212529;
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.save-icon {
+    position: absolute;
+    right: 28px;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 7px 0px;
+}
+
+.main-image {
+    width: 100%;
+    display: block;
+}
+
+.content {
+    padding: 10px 0px;
+}
+
+.content h2 {
+    color: #212529;
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #0092bd;
+}
+
+.black-color {
+    color: #212529;
+}
+
+li span {
+    position: relative;
+    left: -6px;
+}
+
+.date-location {
+    font-size: 14px;
+    color: rgba(33, 37, 41, 0.5);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 4px 0px;
+}
+
+.rating {
+    margin-left: 4px;
+    color: #f87c56;
+}
+
+.program h3,
+.reviews h3 {
+    color: #212529;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+
+.program ul,
+.reviews ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.program ul li,
+.reviews ul li {
+    color: #212529;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 16px;
+    line-height: 130%;
+}
+
+.reviews ul li .Union {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.ticket-button {
+    position: absolute;
+    bottom: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 32px);
+    padding: 16px;
+    font-size: 16px;
+    color: #e6f4f7;
+    background-color: #f87c56;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0px -4px 11.1px 0px rgba(0, 0, 0, 0.1),
+        0px 4px 11px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-button:hover {
+    background-color: #dc7150;
+}
+
+@media (min-width: 1133px) {
+    body {
+        padding: 16px 16px;
+        justify-content: space-between;
+    }
+
+    .header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 0px;
+        width: 100%; /* Corrigé pour assurer l'alignement */
+    }
+
+    .save-icon {
+        position: relative; /* Modifié pour s'aligner horizontalement */
+        margin-left: auto; /* Pousse l'élément à droite */
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .first-part {
+        margin-right: 40px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .content {
+        padding: 10px 0px;
+    }
+
+    .ticket-button {
+        position: relative; /* Corrigé pour alignement horizontal */
+        bottom: -32px; /* Retiré absolute pour éviter l'isolation */
+        width: 50%; /* Alignement avec le conteneur */
+    }
+}
+
+@media (min-width: 1512px) {
+    body {
+        padding: 16px 16px;
+        justify-content: center;
+    }
+    .container {
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .two-part {
+        margin-right: 24px;
+    }
+
+    .program h3,
+    .reviews h3 {
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+}
